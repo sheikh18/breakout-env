@@ -45,6 +45,7 @@ $ pip install git+https://github.com/SSARCandy/breakout-env.git@master
 ### Interact with environment
 
 ```py
+import random
 from breakout_env import Breakout
 
 # Create Breakout environment with some options.
@@ -70,6 +71,7 @@ for ep in range(2):
 The observation retuned by env is a numpy 2D array, it can be easily visualize using some library like [OpenCV](https://opencv.org/) or [matplotlib](https://matplotlib.org/).
 
 ```py
+import random
 import cv2
 from breakout_env import Breakout
 
