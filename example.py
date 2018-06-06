@@ -34,7 +34,7 @@ for ep in range(1):
     # action = random.randint(0, env.actions - 1)
     action = simple_agent(env)
     obs, reward, done, _ = env.step(action)
-    print('Epsoide: {}, Step: {}, Reward: {}, Done: {}'.format(ep, t, reward, done))
+    print('Episode: {}, Step: {}, Reward: {}, Done: {}'.format(ep, t, reward, done))
     imshow('obs', obs)
     waitKey(1)
     vid.write(obs)
