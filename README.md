@@ -79,7 +79,7 @@ env.reset()
 while True:
   # Select random action
   action = random.randint(0, env.actions - 1)
-  obs, _, _, _ = env.step(action)
+  obs, _, done, _ = env.step(action)
   # Show the observation using OpenCV
   cv2.imshow('obs', obs)
   cv2.waitKey(1)
